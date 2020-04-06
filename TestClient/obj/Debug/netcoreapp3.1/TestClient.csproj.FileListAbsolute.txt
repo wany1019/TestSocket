@@ -1,0 +1,13 @@
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\bin\Debug\netcoreapp3.1\TestClient.exe
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\bin\Debug\netcoreapp3.1\TestClient.deps.json
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\bin\Debug\netcoreapp3.1\TestClient.runtimeconfig.json
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\bin\Debug\netcoreapp3.1\TestClient.runtimeconfig.dev.json
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\bin\Debug\netcoreapp3.1\TestClient.dll
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\bin\Debug\netcoreapp3.1\TestClient.pdb
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.csprojAssemblyReference.cache
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.csproj.CoreCompileInputs.cache
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.AssemblyInfoInputs.cache
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.AssemblyInfo.cs
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.dll
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.pdb
+C:\00.WorkSpace\01.MINE\TestSocket\TestClient\obj\Debug\netcoreapp3.1\TestClient.genruntimeconfig.cache

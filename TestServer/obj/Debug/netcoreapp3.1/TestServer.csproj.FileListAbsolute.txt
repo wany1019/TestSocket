@@ -1,0 +1,13 @@
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\bin\Debug\netcoreapp3.1\TestServer.exe
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\bin\Debug\netcoreapp3.1\TestServer.deps.json
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\bin\Debug\netcoreapp3.1\TestServer.runtimeconfig.json
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\bin\Debug\netcoreapp3.1\TestServer.runtimeconfig.dev.json
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\bin\Debug\netcoreapp3.1\TestServer.dll
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\bin\Debug\netcoreapp3.1\TestServer.pdb
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.csprojAssemblyReference.cache
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.csproj.CoreCompileInputs.cache
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.AssemblyInfoInputs.cache
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.AssemblyInfo.cs
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.dll
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.pdb
+C:\00.WorkSpace\01.MINE\TestSocket\TestServer\obj\Debug\netcoreapp3.1\TestServer.genruntimeconfig.cache
