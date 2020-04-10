@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Text;
+using System.Collections.Generic;
 
 namespace TestClient
 {
@@ -181,5 +182,11 @@ namespace TestClient
             EndClinet();
             return 0;
         }
+    }
+
+    public class TestInfo
+    {
+        public string Id { get; set; }
+        public List<string> tList = new List<string>();
     }
 }

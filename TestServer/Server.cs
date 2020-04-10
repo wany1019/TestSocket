@@ -4,7 +4,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Collections.Generic;
-
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 namespace TestServer
 {
     public class StateObject
@@ -17,6 +18,13 @@ namespace TestServer
         public byte[] buffer = new byte[BufferSize];
         // Received data string.  
         public StringBuilder sb = new StringBuilder();
+    }
+
+    [SerializableAttribute]
+    public class TestInfo
+    {
+        public string Id { get; set; }
+        public List<string> tList = new List<string>();
     }
 
     public class AsynchronousSocketListener
@@ -131,9 +139,14 @@ namespace TestServer
 
         private static void Send(Socket handler, String data)
         {
+            TestInfo test = new TestInfo();
+            test.Id = data;
+            test.tList.Add("123123");
+            test.tList.Add("asdasd");
             // Convert the string data to byte data using ASCII encoding.  
             byte[] byteData = Encoding.ASCII.GetBytes(data);
-
+            
+            new soap
             // Begin sending the data to the remote device.  
             handler.BeginSend(byteData, 0, byteData.Length, 0,
                 new AsyncCallback(SendCallback), handler);
