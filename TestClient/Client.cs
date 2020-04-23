@@ -4,6 +4,8 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Text;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace TestClient
 {
@@ -45,7 +47,7 @@ namespace TestClient
 
                 client.Connect(remoteEP);
 
-                Console.WriteLine("Conn");
+                Console.WriteLine("선수 입장");
             }
             catch (Exception e)
             {
@@ -60,19 +62,18 @@ namespace TestClient
                 while (true)
                 {
                     byte[] bytes = new byte[1024];
-
+                    
                     int bytesRec = client.Receive(bytes);
+
+
+                    NetworkStream networkStream = new NetworkStream(client);
+
+
+                    string strJson = Encoding.Unicode.GetString(bytes, 0, bytesRec);
+
+
                     Console.WriteLine("Echoed test = {0}",
                     Encoding.ASCII.GetString(bytes, 0, bytesRec));
-                    //// Create the state object.  
-                    //StateObject state = new StateObject();
-                    //state.workSocket = client;
-
-                    //// Begin receiving the data from the remote device.  
-                    //client.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
-                    //    new AsyncCallback(ReceiveCallback), state);
-
-                    //receiveDone.WaitOne();
                 }
 
             }
@@ -82,44 +83,6 @@ namespace TestClient
             }
         }
 
-        private static void ReceiveCallback(IAsyncResult ar)
-        {
-            try
-            {
-                // Retrieve the state object and the client socket
-                // from the asynchronous state object.  
-                StateObject state = (StateObject)ar.AsyncState;
-
-                // Read data from the remote device.  
-                int bytesRead = client.EndReceive(ar);
-
-                if (bytesRead > 0)
-                {
-                    // There might be more data, so store the data received so far.  
-                    state.sb.Append(Encoding.ASCII.GetString(state.buffer, 0, bytesRead));
-
-                    Console.WriteLine("Response received : {0}", state.sb.ToString());
-
-                    // Get the rest of the data.  
-                    state.workSocket.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
-                        new AsyncCallback(ReceiveCallback), state);
-                }
-                else
-                {
-                    // All the data has arrived; put it in response.  
-                    if (state.sb.Length > 1)
-                    {
-                        Console.WriteLine("Response received Done : {0}", state.sb.ToString());
-                    }
-                }
-
-                receiveDone.Set();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-        }
 
         private static void Send()
         {
